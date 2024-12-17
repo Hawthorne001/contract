@@ -1,8 +1,9 @@
-import { utils as anchorUtils, BN } from "@coral-xyz/anchor";
-import { relayerRefundHashFn, RelayerRefundLeafSolana, RelayerRefundLeafType } from "../../../test/svm/utils";
+import { utils as anchorUtils, BN, AnchorProvider } from "@coral-xyz/anchor";
 import { BigNumber, ethers } from "ethers";
 import { PublicKey } from "@solana/web3.js";
 import { MerkleTree } from "@uma/common";
+import { RelayerRefundLeafSolana, RelayerRefundLeafType } from "../../../src/types/svm";
+import { relayerRefundHashFn } from "../../../src/svm";
 
 export const requireEnv = (name: string): string => {
   if (!process.env[name]) throw new Error(`Environment variable ${name} is not set`);
@@ -13,6 +14,13 @@ export const getSolanaChainId = (cluster: "devnet" | "mainnet"): BigNumber => {
   return BigNumber.from(
     BigInt(ethers.utils.keccak256(ethers.utils.toUtf8Bytes(`solana-${cluster}`))) & BigInt("0xFFFFFFFFFFFFFFFF")
   );
+};
+
+export const isSolanaDevnet = (provider: AnchorProvider): boolean => {
+  const solanaRpcEndpoint = provider.connection.rpcEndpoint;
+  if (solanaRpcEndpoint.includes("devnet")) return true;
+  else if (solanaRpcEndpoint.includes("mainnet")) return false;
+  else throw new Error(`Unsupported solanaCluster endpoint: ${solanaRpcEndpoint}`);
 };
 
 export const formatUsdc = (amount: BigNumber): string => {
