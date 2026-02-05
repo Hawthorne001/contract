@@ -593,9 +593,8 @@
       "chain_name": "MegaETH",
       "contracts": {
         "SpokePool": {
-          "address": "0x3db06da8f0a24a525f314eec954fc5c6a973d40e",
-          "block_number": 5450616,
-          "transaction_hash": "0xe7eb021032841de0e2183c8135f633f18487637ca363abe777cd9e9360d57c49"
+          "address": "0x3Db06DA8F0a24A525f314eeC954fC5c6a973d40E",
+          "block_number": 5450616
         },
         "MulticallHandler": {
           "address": "0xFfc1285082deAB9bf0ECA5699e4930bb310aFbE4",
