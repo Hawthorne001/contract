@@ -33,8 +33,8 @@ contract DeploySponsoredCCTPDstPeriphery is DeploymentUtils {
 
         vm.startBroadcast(deployerPrivateKey);
 
-        DonationBox donationBox = new DonationBox();
-        console.log("DonationBox deployed to:", address(donationBox));
+        DonationBox donationBox = DonationBox(config.get("donationBox").toAddress());
+        console.log("DonationBox:", address(donationBox));
 
         SponsoredCCTPDstPeriphery sponsoredCCTPDstPeriphery = new SponsoredCCTPDstPeriphery(
             cctpMessageTransmitter,
@@ -46,9 +46,9 @@ contract DeploySponsoredCCTPDstPeriphery is DeploymentUtils {
 
         console.log("SponsoredCCTPDstPeriphery deployed to:", address(sponsoredCCTPDstPeriphery));
 
-        donationBox.transferOwnership(address(sponsoredCCTPDstPeriphery));
+        donationBox.grantRole(donationBox.WITHDRAWER_ROLE(), address(sponsoredCCTPDstPeriphery));
 
-        console.log("DonationBox ownership transferred to:", address(sponsoredCCTPDstPeriphery));
+        console.log("DonationBox WITHDRAWER_ROLE granted to:", address(sponsoredCCTPDstPeriphery));
 
         vm.stopBroadcast();
 
@@ -58,6 +58,6 @@ contract DeploySponsoredCCTPDstPeriphery is DeploymentUtils {
         assertEq(address(sponsoredCCTPDstPeriphery.cctpMessageTransmitter()), cctpMessageTransmitter);
         assertEq(sponsoredCCTPDstPeriphery.baseToken(), baseToken);
         assertEq(sponsoredCCTPDstPeriphery.signer(), deployer);
-        assertEq(donationBox.owner(), address(sponsoredCCTPDstPeriphery));
+        assertTrue(donationBox.hasRole(donationBox.WITHDRAWER_ROLE(), address(sponsoredCCTPDstPeriphery)));
     }
 }
