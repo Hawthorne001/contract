@@ -788,7 +788,7 @@ contract SpokePoolPeripheryTest is Test {
         );
 
         // Should emit expected deposit event
-        vm.expectRevert(SpokePoolPeriphery.InvalidSignature.selector);
+        vm.expectRevert(PeripherySigningLib.InvalidSignature.selector);
         spokePoolPeriphery.swapAndBridgeWithPermit(
             depositor, // signatureOwner
             invalidSwapAndDepositData,
