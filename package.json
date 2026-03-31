@@ -1,6 +1,6 @@
 {
   "name": "@across-protocol/contracts",
-  "version": "5.0.3",
+  "version": "5.0.4",
   "author": "UMA Team",
   "license": "AGPL-3.0-only",
   "repository": {
@@ -53,6 +53,8 @@
     "@coral-xyz/anchor": "^0.31.1",
     "@eth-optimism/contracts": "^0.5.40",
     "@ethersproject/bignumber": "5.7.0",
+    "@ethersproject/bytes": "5.7.0",
+    "@ethersproject/keccak256": "5.7.0",
     "@openzeppelin/contracts": "5.5.0",
     "@openzeppelin/contracts-upgradeable": "5.5.0",
     "@openzeppelin/contracts-upgradeable-v4": "npm:@openzeppelin/contracts-upgradeable@4.9.6",
@@ -66,8 +68,6 @@
     "@solana/spl-token": "0.4.14",
     "@solana/web3.js": "1.98.2",
     "@types/yargs": "^17.0.33",
-    "@uma/common": "^2.37.3",
-    "@uma/contracts-node": "^0.4.17",
     "bs58": "^6.0.0",
     "yargs": "^17.7.2",
     "zksync-web3": "^0.14.3"
