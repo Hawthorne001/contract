@@ -26,7 +26,8 @@ This file contains the latest deployed smart contract addresses from the broadca
 | CounterfactualDepositOFT       | [0x4094ceE40173E85841E9E7FC19B7fDc97301aF12](https://etherscan.io/address/0x4094ceE40173E85841E9E7FC19B7fDc97301aF12) |
 | CounterfactualDepositSpokePool | [0xc7b1662674b2226ce7943162f655897a40699ff9](https://etherscan.io/address/0xc7b1662674b2226ce7943162f655897a40699ff9) |
 | DoctorWho_Adapter              | [0x8956eFa31572E1d7ed5c8e36772F214A57DFA0D1](https://etherscan.io/address/0x8956eFa31572E1d7ed5c8e36772F214A57DFA0D1) |
-| DonationBox                    | [0xc1A2465c0913438A51d0b6339169f8b944f00cD1](https://etherscan.io/address/0xc1A2465c0913438A51d0b6339169f8b944f00cD1) |
+| DonationBox                    | [0x1648fC159a5c13c060EFdF44f3CEE9bD184fa168](https://etherscan.io/address/0x1648fC159a5c13c060EFdF44f3CEE9bD184fa168) |
+| DonationBox_CCTP               | [0xc1A2465c0913438A51d0b6339169f8b944f00cD1](https://etherscan.io/address/0xc1A2465c0913438A51d0b6339169f8b944f00cD1) |
 | Ethereum_Adapter               | [0x527E872a5c3f0C7c24Fe33F2593cFB890a285084](https://etherscan.io/address/0x527E872a5c3f0C7c24Fe33F2593cFB890a285084) |
 | HubPool                        | [0xc186fA914353c44b2E33eBE05f21846F1048bEda](https://etherscan.io/address/0xc186fA914353c44b2E33eBE05f21846F1048bEda) |
 | HubPoolStore                   | [0x1Ace3BbD69b63063F859514Eca29C9BDd8310E61](https://etherscan.io/address/0x1Ace3BbD69b63063F859514Eca29C9BDd8310E61) |
@@ -221,7 +222,8 @@ This file contains the latest deployed smart contract addresses from the broadca
 | CounterfactualDepositCCTP      | [0xA45F9f1c963500a91ea87df6c30C2fc8548b944b](https://hyperevmscan.io//address/0xA45F9f1c963500a91ea87df6c30C2fc8548b944b) |
 | CounterfactualDepositFactory   | [0x9CD343B1cE2798bFDC09debc83f9CbFad4A22772](https://hyperevmscan.io//address/0x9CD343B1cE2798bFDC09debc83f9CbFad4A22772) |
 | CounterfactualDepositSpokePool | [0xF90d87fcd15D3Eb35e8725FAe2DDEd3998B0DB99](https://hyperevmscan.io//address/0xF90d87fcd15D3Eb35e8725FAe2DDEd3998B0DB99) |
-| DonationBox                    | [0xf9a0c1C775f1B6e156ad3f1DB784520461DDb19e](https://hyperevmscan.io//address/0xf9a0c1C775f1B6e156ad3f1DB784520461DDb19e) |
+| DonationBox_CCTP               | [0xEd7422d44045781f4492Fa4b569063e5a1EB185b](https://hyperevmscan.io//address/0xEd7422d44045781f4492Fa4b569063e5a1EB185b) |
+| DonationBox_OFT                | [0xf9a0c1C775f1B6e156ad3f1DB784520461DDb19e](https://hyperevmscan.io//address/0xf9a0c1C775f1B6e156ad3f1DB784520461DDb19e) |
 | DstOFTHandler                  | [0x0Ca8316a6fcc15C833A220c40D84550B08339438](https://hyperevmscan.io//address/0x0Ca8316a6fcc15C833A220c40D84550B08339438) |
 | HyperliquidDepositHandler      | [0xbFB53E9C8acCe6D6aC54885A8e33A7Aec95427D5](https://hyperevmscan.io//address/0xbFB53E9C8acCe6D6aC54885A8e33A7Aec95427D5) |
 | MulticallHandler               | [0x5E7840E06fAcCb6d1c3b5F5E0d1d3d07F2829bba](https://hyperevmscan.io//address/0x5E7840E06fAcCb6d1c3b5F5E0d1d3d07F2829bba) |
@@ -305,7 +307,7 @@ This file contains the latest deployed smart contract addresses from the broadca
 | CounterfactualDepositCCTP      | [0xD000850Bfb56B61995eB777e0602b5032B4Dcf55](https://basescan.org/address/0xD000850Bfb56B61995eB777e0602b5032B4Dcf55) |
 | CounterfactualDepositFactory   | [0x9CD343B1cE2798bFDC09debc83f9CbFad4A22772](https://basescan.org/address/0x9CD343B1cE2798bFDC09debc83f9CbFad4A22772) |
 | CounterfactualDepositSpokePool | [0xF7d56A851767a3f1369c8Fe48c5740d5ffc1074C](https://basescan.org/address/0xF7d56A851767a3f1369c8Fe48c5740d5ffc1074C) |
-| DonationBox                    | [0xC1d6B848553602BED3524B05B7EB68c20899d861](https://basescan.org/address/0xC1d6B848553602BED3524B05B7EB68c20899d861) |
+| DonationBox_CCTP               | [0xC1d6B848553602BED3524B05B7EB68c20899d861](https://basescan.org/address/0xC1d6B848553602BED3524B05B7EB68c20899d861) |
 | MulticallHandler               | [0x0F7Ae28dE1C8532170AD4ee566B5801485c13a0E](https://basescan.org/address/0x0F7Ae28dE1C8532170AD4ee566B5801485c13a0E) |
 | SpokePool                      | [0x09aea4b2242abC8bb4BB78D537A67a245A7bEC64](https://basescan.org/address/0x09aea4b2242abC8bb4BB78D537A67a245A7bEC64) |
 | SpokePoolPeriphery             | [0x10D8b8DaA26d307489803e10477De69C0492B610](https://basescan.org/address/0x10D8b8DaA26d307489803e10477De69C0492B610) |
